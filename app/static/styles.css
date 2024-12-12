@@ -83,6 +83,7 @@ a.button {
     border-radius: 5px;
     text-decoration: none;
     cursor: pointer;
+    align-self: flex-start;
 }
 
 button:hover,

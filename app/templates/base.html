@@ -11,7 +11,7 @@
 <body>
     <header>
         <h1>MasterBlog</h1>
-        <a href="{{ url_for('add') }}" class="button">Add Post</a>
+        <a href="{{ url_for('blog.add') }}" class="button">Add Post</a>
     </header>
     <main>
         {% with messages = get_flashed_messages(with_categories=True) %}

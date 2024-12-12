@@ -6,10 +6,10 @@
     <p>By {{ post.author }}</p>
     <p>{{ post.content }}</p>
     <div class="post-buttons">
-        <form action="{{ url_for('delete', id=post.id) }}" method="POST">
+        <form action="{{ url_for('blog.delete', id=post.id) }}" method="POST">
             <button>Delete</button>
         </form>
-        <a href="{{ url_for('edit', id=post.id) }}" class="button">Edit</a>
+        <a href="{{ url_for('blog.edit', id=post.id) }}" class="button">Edit</a>
     </div>
 </div>
 {% endblock %}
